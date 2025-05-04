@@ -4,21 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <meta
       name="description"
       content="Backend-focused Web Developer Portfolio - Min Khant Thaw"
     />
   </head>
-  <body class="bg-black p-6">
+  <body class="bg-black p-4 sm:p-2">
     <main
-      class="max-w-3xl mx-auto min-h-[90vh] bg-white grid grid-cols-3 rounded"
+      class="max-w-3xl mx-auto min-h-[90vh] bg-white grid grid-cols-1 lg:grid-cols-3 rounded"
     >
-      <div class="col-span-2 p-6">
+      <!-- Left Section -->
+      <div class="col-span-2 p-6 order-2 lg:order-1">
+        <!-- Header -->
         <section class="mt-2">
           <h1
-            class="text-3xl text-gray-800 font-semibold flex gap-2 items-center justify-start"
+            class="text-3xl text-gray-800 font-semibold flex flex-wrap gap-2 items-center justify-start"
           >
             MIN
             <span class="font-extrabold">KHANT</span>
@@ -27,13 +29,14 @@
               style="-webkit-text-stroke: 1px #000000"
               >THAW</span
             >
-            <span><hr class="h-2 border-none bg-cyan-600 lg:w-40 mt-4" /></span>
           </h1>
+          <hr class="h-1 border-none bg-cyan-600 w-40 mt-2" />
           <span class="text-cyan-600 font-semibold">BACKEND DEVELOPER</span>
         </section>
 
-        <section class="mt-2">
-          <p class="text-gray-600 mt-2 text-xs">
+        <!-- Description -->
+        <section class="mt-4">
+          <p class="text-gray-600 text-sm">
             Backend-focused Full Stack Developer with strong expertise in
             Laravel, database design, and system architecture. Skilled in
             building robust, scalable backend systems with clean, maintainable
@@ -44,11 +47,14 @@
           </p>
         </section>
 
-        <section class="mt-4">
+        <!-- Projects -->
+        <section class="mt-6">
           <h2 class="text-lg font-bold text-gray-800">My Projects</h2>
-          <ul class="text-sm text-gray-600 list-disc list-inside mt-2">
+          <ul
+            class="text-sm text-gray-600 list-disc list-inside mt-2 space-y-1"
+          >
             <li>
-              <strong>HR Management System</strong> – Built with Laravel & React
+              <strong>HR Management System</strong> – Laravel & React
               <a
                 href="https://github.com/mk293822/Advance-HR-Management.git"
                 class="text-cyan-600 underline font-bold"
@@ -56,7 +62,7 @@
               >
             </li>
             <li>
-              <strong>Ecommerce</strong> – Built with Laravel & React.
+              <strong>Ecommerce</strong> – Laravel & React
               <a
                 href="https://github.com/mk293822/advance-laravel-ecommerce.git"
                 class="text-cyan-600 underline font-bold"
@@ -64,7 +70,7 @@
               >
             </li>
             <li>
-              <strong>Realtime Chatapp</strong> – Built with Laravel & React.
+              <strong>Realtime Chatapp</strong> – Laravel & React
               <a
                 href="https://github.com/mk293822/Realtime-Chatapp-Advance.git"
                 class="text-cyan-600 underline font-bold"
@@ -72,7 +78,7 @@
               >
             </li>
             <li>
-              <strong>Student Management System</strong> – Built with Django.
+              <strong>Student Management System</strong> – Django
               <a
                 href="https://github.com/mk293822/StudentManagement-Django-react.git"
                 class="text-cyan-600 underline font-bold"
@@ -82,64 +88,102 @@
           </ul>
         </section>
 
-        <section class="mt-4">
-  <h2 class="text-lg font-bold text-gray-800">My Skills</h2>
-  <div class="text-sm text-gray-600 mt-2 space-y-2 grid grid-cols-5">
-    <div class="flex flex-col items-center gap-2">
-        <img src="./svgs/html-5-svgrepo-com.svg" class="w-12 h-12" alt="">
-      Html
-    </div>
-    <div class="flex flex-col items-center gap-2">
-        <img src="./svgs/css-svgrepo-com.svg" class="w-12 h-12" alt="">
-      Css
-    </div>
-    <div class="flex flex-col items-center gap-2">
-        <img src="./svgs/tailwind-svgrepo-com.svg" class="w-12 h-12" alt="">
-      Tailwind Css
-    </div>
-    <div class="flex flex-col items-center gap-2">
-        <img src="./svgs/javascript-svgrepo-com.svg" class="w-12 h-12" alt="">
-      Javascript
-    </div>
-    <div class="flex flex-col items-center gap-2">
-        <img src="./svgs/typescript-svgrepo-com.svg" class="w-12 h-12" alt="">
-      Typescript
-    </div>
-    <div class="flex flex-col items-center gap-2">
-        <img src="./svgs/php-svgrepo-com.svg" class="w-12 h-12" alt="">
-      Php
-    </div>
-    <div class="flex flex-col items-center gap-2">
-        <img src="./svgs/laravel-svgrepo-com.svg" class="w-12 h-12" alt="">
-      Laravel
-    </div>
-    <div class="flex flex-col items-center gap-2">
-        <img src="./svgs/react-svgrepo-com.svg" class="w-12 h-12" alt="">
-      React
-    </div>
-    <div class="flex flex-col items-center gap-2">
-        <img src="./svgs/mysql-logo-svgrepo-com.svg" class="w-12 h-12" alt="">
-      Mysql
-    </div>
-    <div class="flex flex-col items-center gap-2">
-        <img src="./svgs/github-142-svgrepo-com.svg" class="w-12 h-12" alt="">
-      Git & GitHub
-    </div>
-  </div>
-</section>
-
+        <!-- Skills -->
+        <section class="mt-6">
+          <h2 class="text-lg font-bold text-gray-800">My Skills</h2>
+          <div
+            class="text-sm text-gray-600 mt-4 grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+          >
+            <!-- Repeat for each skill -->
+            <div class="flex flex-col items-center gap-2 text-center">
+              <img
+                src="./svgs/html-5-svgrepo-com.svg"
+                class="w-12 h-12"
+                alt=""
+              />
+              Html
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <img src="./svgs/css-svgrepo-com.svg" class="w-12 h-12" alt="" />
+              Css
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <img
+                src="./svgs/tailwind-svgrepo-com.svg"
+                class="w-12 h-12"
+                alt=""
+              />
+              Tailwind
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <img
+                src="./svgs/javascript-svgrepo-com.svg"
+                class="w-12 h-12"
+                alt=""
+              />
+              JavaScript
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <img
+                src="./svgs/typescript-svgrepo-com.svg"
+                class="w-12 h-12"
+                alt=""
+              />
+              TypeScript
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <img src="./svgs/php-svgrepo-com.svg" class="w-12 h-12" alt="" />
+              PHP
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <img
+                src="./svgs/laravel-svgrepo-com.svg"
+                class="w-12 h-12"
+                alt=""
+              />
+              Laravel
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <img
+                src="./svgs/react-svgrepo-com.svg"
+                class="w-12 h-12"
+                alt=""
+              />
+              React
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <img
+                src="./svgs/mysql-logo-svgrepo-com.svg"
+                class="w-12 h-12"
+                alt=""
+              />
+              MySQL
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <img
+                src="./svgs/github-142-svgrepo-com.svg"
+                class="w-12 h-12"
+                alt=""
+              />
+              Git & GitHub
+            </div>
+          </div>
+        </section>
       </div>
 
-      <div class="bg-black/90 p-6 text-gray-200">
+      <!-- Right Section -->
+      <div class="bg-black/90 p-6 text-gray-200 order-1 lg:order-2">
+        <!-- Profile Image -->
         <img
           src="./images/IMG_20250404_125020.jpg"
           alt="Profile"
-          class="rounded-full w-32 h-32 mx-auto border-4 border-gray-400"
+          class="rounded-full w-32 h-32 mx-auto border-4 border-gray-400 object-cover"
           loading="lazy"
         />
 
-        <section class="mt-4">
-          <h2 class="text-lg font-semibold text-gray-200 mb-2">About Me</h2>
+        <!-- About Me -->
+        <section class="mt-6">
+          <h2 class="text-lg font-semibold mb-2 text-center">About Me</h2>
           <ul class="text-sm text-gray-400 space-y-1">
             <li>
               <span class="text-cyan-500 font-semibold">Name:</span> Min Khant
@@ -162,12 +206,11 @@
           </ul>
         </section>
 
-        <hr
-          class="bg-cyan-600 h-1 w-[85%] outline-none border-none my-4 rounded"
-        />
+        <hr class="bg-cyan-600 h-1 w-[90%] my-4 rounded border-none" />
 
-        <section class="flex flex-col mx-auto gap-2 ">
-          <div class="flex items-center gap-2">
+        <!-- Contact Info -->
+        <section class="space-y-4">
+          <div class="flex items-center gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -182,13 +225,13 @@
                 d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
               />
             </svg>
-            <div class="flex flex-col text-gray-400">
-              <span class="text-cyan-600">Phone</span>
-              <span class="text-xs">+959-686-515-598</span>
+            <div>
+              <p class="text-cyan-600">Phone</p>
+              <p class="text-xs text-gray-400">+959-686-515-598</p>
             </div>
           </div>
-          <div class="flex items-center gap-2">
-            <svg
+          <div class="flex items-center gap-3">
+             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -202,13 +245,13 @@
                 d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
               />
             </svg>
-            <div class="flex flex-col text-gray-400">
-              <span class="text-cyan-600">Email</span>
-              <span class="text-xs">mkt293822@gmail.com</span>
+            <div>
+              <p class="text-cyan-600">Email</p>
+              <p class="text-xs text-gray-400 break-all">mkt293822@gmail.com</p>
             </div>
           </div>
-          <div class="flex items-center gap-2">
-            <svg
+          <div class="flex items-center gap-3">
+             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -222,14 +265,13 @@
                 d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
               />
             </svg>
-            <div class="flex flex-col text-gray-400">
-              <span class="text-cyan-600">Address</span>
-              <span class="text-xs">TaungDwinGyi / Magway</span>
+            <div>
+              <p class="text-cyan-600">Address</p>
+              <p class="text-xs text-gray-400">TaungDwinGyi / Magway</p>
             </div>
           </div>
         </section>
       </div>
-
     </main>
   </body>
 </html>
