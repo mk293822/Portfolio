@@ -1,8 +1,10 @@
+import ProfileImage from "../assets/profile-no-bg.png";
+
 const About = () => {
 	return (
 		<section
 			id="about"
-			className="h-screen snap-start flex flex-col justify-center items-center text-center px-6 bg-contain bg-no-repeat bg-bottom-right xl:bg-[url('profile-no-bg.png')]"
+			className={`h-screen snap-start flex flex-col justify-center items-center text-center px-6 bg-contain bg-no-repeat bg-bottom-right xl:bg-[${ProfileImage}]`}
 		>
 			<h1 className="text-4xl md:text-6xl mb-6 font-radley italic">About Me</h1>
 
