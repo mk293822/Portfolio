@@ -13,14 +13,14 @@ const Contact = () => {
 
 			<div className="flex flex-col gap-4 text-lg">
 				<a
-					href="mailto:youremail@example.com"
+					href="mailto:mkt293822@gmail.com"
 					className="hover:underline underline-offset-4"
 				>
-					youremail@example.com
+					mkt293822@gmail.com
 				</a>
 
 				<a
-					href="https://github.com/yourusername"
+					href="https://github.com/mk293822"
 					target="_blank"
 					rel="noopener"
 					className="hover:underline underline-offset-4"
