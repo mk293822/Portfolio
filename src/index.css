@@ -74,8 +74,10 @@ body::-webkit-scrollbar {
 	display: none; /* Chrome, Safari */
 }
 
-.hero {
-	background-image: url("../assets/profile-no-bg.png");
+@media (min-width: 1280px) {
+	.hero {
+		background-image: url("./assets/profile-no-bg.png");
+	}
 }
 
 :root {
