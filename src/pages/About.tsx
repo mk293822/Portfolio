@@ -2,7 +2,7 @@ const About = () => {
 	return (
 		<section
 			id="about"
-			className="h-screen snap-start flex flex-col justify-center items-center text-center px-6"
+			className="h-screen snap-start flex flex-col justify-center items-center text-center px-6 bg-contain bg-no-repeat bg-bottom-right xl:bg-[url('profile-no-bg.png')]"
 		>
 			<h1 className="text-4xl md:text-6xl mb-6 font-radley italic">About Me</h1>
 

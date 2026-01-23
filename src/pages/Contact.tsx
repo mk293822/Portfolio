@@ -1,41 +1,72 @@
+import GitHubIcon from "../assets/github-142-svgrepo-com.svg";
+
 const Contact = () => {
+	const contacts = [
+		{
+			title: "Phone",
+			value: "+95 9123456789",
+			href: "tel:+959123456789",
+			icon: "📞",
+			color: "text-blue-600",
+		},
+		{
+			title: "Email",
+			value: "mkt293822@gmail.com",
+			href: "mailto:mkt293822@gmail.com",
+			icon: "✉️",
+			color: "text-blue-600",
+		},
+		{
+			title: "GitHub",
+			value: "github.com/mk293822",
+			href: "https://github.com/mk293822",
+			icon: (
+				<img
+					src={GitHubIcon}
+					alt=""
+					className="size-9"
+				/>
+			),
+			color: "text-gray-800",
+		},
+		{
+			title: "LinkedIn",
+			value: "linkedin.com/in/min-khant-thaw",
+			href: "https://www.linkedin.com/in/min-khant-thaw-7037a3364/",
+			icon: "🔗",
+			color: "text-blue-700",
+		},
+	];
+
 	return (
 		<section
 			id="contact"
-			className="h-screen snap-start flex flex-col justify-center items-center text-center px-6"
+			className="h-screen snap-start flex flex-col justify-center items-center text-center px-6 py-12"
 		>
-			<h1 className="text-4xl md:text-6xl mb-6 font-radley italic">Contact</h1>
+			<h1 className="text-4xl md:text-6xl mb-10 font-radley italic">Contact</h1>
 
-			<p className="text-lg md:text-xl max-w-xl text-gray-700 mb-10">
-				If you’d like to work together or just say hello, feel free to reach
-				out.
+			<p className="text-lg md:text-xl max-w-xl text-gray-700 mb-12 leading-relaxed">
+				If you’d like to work together on a project or just want to say hello,
+				feel free to reach out. I’m always happy to connect and chat.
 			</p>
 
-			<div className="flex flex-col gap-4 text-lg">
-				<a
-					href="mailto:mkt293822@gmail.com"
-					className="hover:underline underline-offset-4"
-				>
-					mkt293822@gmail.com
-				</a>
-
-				<a
-					href="https://github.com/mk293822"
-					target="_blank"
-					rel="noopener"
-					className="hover:underline underline-offset-4"
-				>
-					GitHub
-				</a>
-
-				<a
-					href="https://www.linkedin.com/in/min-khant-thaw-7037a3364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-					target="_blank"
-					rel="noopener"
-					className="hover:underline underline-offset-4"
-				>
-					LinkedIn
-				</a>
+			{/* Contact grid */}
+			<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl w-full">
+				{contacts.map((c, index) => (
+					<a
+						key={index}
+						href={c.href}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="flex items-center gap-4 p-6 border rounded-xl hover:shadow-lg transition hover:scale-105"
+					>
+						<span className={`text-3xl ${c.color}`}>{c.icon}</span>
+						<div className="flex flex-col text-left">
+							<span className="font-semibold">{c.title}</span>
+							<span className="text-gray-700">{c.value}</span>
+						</div>
+					</a>
+				))}
 			</div>
 		</section>
 	);

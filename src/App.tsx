@@ -8,6 +8,7 @@ import Loading from "./components/Loading";
 // Lazy load pages
 const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
+const Skills = lazy(() => import("./pages/Skills"));
 const Contact = lazy(() => import("./pages/Contact"));
 const About = lazy(() => import("./pages/About"));
 
@@ -28,6 +29,7 @@ const App = () => {
 								<Layout>
 									<Home />
 									<Projects />
+									<Skills />
 									<About />
 									<Contact />
 								</Layout>

@@ -26,6 +26,12 @@ const Home = () => {
 						>
 							Projects
 						</a>
+						<a
+							href="#skills"
+							className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+						>
+							Skills
+						</a>
 
 						<a
 							href="#about"
@@ -43,7 +49,7 @@ const Home = () => {
 				</div>
 			</header>
 
-			<div className="xl:bg-[url('profile-no-bg.png')] flex flex-col items-center justify-center h-[calc(90vh+2.5px)] bg-contain bg-grad bg-no-repeat bg-right flex-1">
+			<div className="xl:bg-[url('profile-no-bg.png')] flex flex-col items-center justify-center h-[calc(90vh+2.5px)] bg-contain bg-no-repeat bg-right flex-1">
 				<div className="text-gray-800 text-center flex-1 items-center flex flex-col justify-center">
 					{/* Hero Section */}
 					<div className="text-center max-w-3xl mx-auto">
