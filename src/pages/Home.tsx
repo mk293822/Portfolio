@@ -1,5 +1,4 @@
 // [calc(90vh+2.5px)]
-import ProfileImage from "../assets/profile-no-bg.png";
 
 const Home = () => {
 	return (
@@ -50,9 +49,7 @@ const Home = () => {
 				</div>
 			</header>
 
-			<div
-				className={`xl:bg-[${ProfileImage}] flex flex-col items-center justify-center h-[calc(90vh+2.5px)] bg-contain bg-no-repeat bg-right flex-1`}
-			>
+			<div className="flex flex-col items-center justify-center h-[calc(90vh+2.5px)] bg-contain bg-no-repeat bg-right flex-1 xl:hero">
 				<div className="text-gray-800 text-center flex-1 items-center flex flex-col justify-center">
 					{/* Hero Section */}
 					<div className="text-center max-w-3xl mx-auto">

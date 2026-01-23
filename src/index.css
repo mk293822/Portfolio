@@ -74,6 +74,10 @@ body::-webkit-scrollbar {
 	display: none; /* Chrome, Safari */
 }
 
+.hero {
+	background-image: url("../assets/profile-no-bg.png");
+}
+
 :root {
 	--radius: 0.625rem;
 	--background: oklch(1 0 0);
