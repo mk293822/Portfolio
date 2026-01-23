@@ -1,4 +1,3 @@
-import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { Suspense, lazy } from "react";
 import PageWrapper from "./components/PageWrapper";
@@ -13,30 +12,18 @@ const Contact = lazy(() => import("./pages/Contact"));
 const About = lazy(() => import("./pages/About"));
 
 const App = () => {
-	const location = useLocation();
-
 	return (
 		<AnimatePresence mode="wait">
 			<Suspense fallback={<Loading />}>
-				<Routes
-					location={location}
-					key={location.pathname}
-				>
-					<Route
-						path="/"
-						element={
-							<PageWrapper>
-								<Layout>
-									<Home />
-									<Projects />
-									<Skills />
-									<About />
-									<Contact />
-								</Layout>
-							</PageWrapper>
-						}
-					/>
-				</Routes>
+				<PageWrapper>
+					<Layout>
+						<Home />
+						<Projects />
+						<Skills />
+						<About />
+						<Contact />
+					</Layout>
+				</PageWrapper>
 			</Suspense>
 		</AnimatePresence>
 	);
