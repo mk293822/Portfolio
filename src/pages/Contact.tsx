@@ -29,7 +29,7 @@ const Contact = () => {
 				</a>
 
 				<a
-					href="https://linkedin.com/in/yourusername"
+					href="https://www.linkedin.com/in/min-khant-thaw-7037a3364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 					target="_blank"
 					rel="noopener"
 					className="hover:underline underline-offset-4"
