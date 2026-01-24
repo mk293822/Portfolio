@@ -41,11 +41,11 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="min-h-screen snap-start flex flex-col justify-center items-center text-center px-6 py-12"
+			className="min-h-screen snap-start flex pt-[12vh] flex-col justify-center items-center text-center px-6 py-12"
 		>
-			<h1 className="text-4xl md:text-6xl mb-10 font-radley italic">Contact</h1>
+			<h1 className="text-4xl md:text-6xl mb-4 font-radley italic">Contact</h1>
 
-			<p className="text-lg md:text-xl max-w-xl text-gray-700 mb-12 leading-relaxed">
+			<p className="text-lg md:text-xl max-w-xl text-gray-700 mb-6 leading-relaxed">
 				If you’d like to work together on a project or just want to say hello,
 				feel free to reach out. I’m always happy to connect and chat.
 			</p>
