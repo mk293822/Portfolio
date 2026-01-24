@@ -18,6 +18,7 @@ const Home = () => {
 							clean code, performance, and great user experiences.
 						</p>
 					</div>
+
 					<a
 						href="#contact"
 						className="text-lg sm:text-xl md:text-2xl relative flex flex-col items-center mt-2 sm:mt-4"

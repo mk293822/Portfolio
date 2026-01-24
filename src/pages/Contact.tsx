@@ -4,8 +4,8 @@ const Contact = () => {
 	const contacts = [
 		{
 			title: "Phone",
-			value: "+95 9123456789",
-			href: "tel:+959123456789",
+			value: "+95 9686515598",
+			href: "tel:+959686515598",
 			icon: "📞",
 			color: "text-blue-600",
 		},
@@ -51,7 +51,7 @@ const Contact = () => {
 			</p>
 
 			{/* Contact grid */}
-			<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl w-full">
+			<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl w-full">
 				{contacts.map((c, index) => (
 					<a
 						key={index}
@@ -67,6 +67,13 @@ const Contact = () => {
 						</div>
 					</a>
 				))}
+				<a
+					href="CV-Form.pdf"
+					download
+					className="px-6 py-2 mt-2 hover:bg-gray-800 hover:text-white col-span-1 sm:col-span-2 sm:mt-4 border border-gray-800 font-semibold lg sm:text-xl rounded-lg transition"
+				>
+					Download My CV
+				</a>
 			</div>
 		</section>
 	);

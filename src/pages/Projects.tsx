@@ -48,11 +48,11 @@ const Projects = () => {
 				{projects.map((project, index) => (
 					<div
 						key={index}
-						className="p-6 border rounded-xl hover:shadow-lg transition hover:scale-105 flex flex-col justify-between"
+						className="p-4 border rounded-xl hover:shadow-lg transition hover:scale-105 flex flex-col justify-between"
 					>
 						<div>
 							<h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-							<p className="text-gray-600 text-sm mb-4">
+							<p className="text-gray-600 text-sm mb-3">
 								{project.description}
 							</p>
 							<span className="text-sm text-gray-500">{project.tech}</span>
