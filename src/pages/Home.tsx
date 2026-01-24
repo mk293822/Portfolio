@@ -3,7 +3,7 @@ const Home = () => {
 	return (
 		<section
 			id="home"
-			className="min-h-screen snap-start pt-[10vh]"
+			className="min-h-screen snap-start [pt-10vh]"
 		>
 			{/* Hero Section */}
 			<div className="hero flex flex-col items-center justify-center h-[calc(90vh+2.5px)] bg-contain bg-no-repeat bg-right">
