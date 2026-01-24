@@ -34,11 +34,11 @@ const Projects = () => {
 	return (
 		<section
 			id="projects"
-			className="h-screen snap-start flex flex-col justify-center items-center text-center px-6"
+			className="min-h-screen py-4 pt-[12vh] snap-start flex flex-col justify-center items-center text-center px-6"
 		>
 			<h1 className="text-4xl md:text-6xl mb-6 font-radley italic">Projects</h1>
 
-			<p className="text-lg md:text-xl max-w-2xl text-gray-700 mb-12">
+			<p className="text-lg md:text-xl max-w-2xl text-gray-700 mb-6">
 				A selection of projects where I focused on building clean, scalable
 				systems with thoughtful UI and strong performance.
 			</p>

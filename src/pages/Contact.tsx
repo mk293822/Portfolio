@@ -41,7 +41,7 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="h-screen snap-start flex flex-col justify-center items-center text-center px-6 py-12"
+			className="min-h-screen snap-start flex flex-col justify-center items-center text-center px-6 py-12"
 		>
 			<h1 className="text-4xl md:text-6xl mb-10 font-radley italic">Contact</h1>
 

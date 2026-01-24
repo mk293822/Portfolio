@@ -116,7 +116,7 @@ const Skills = () => {
 	return (
 		<section
 			id="skills"
-			className="h-screen snap-start flex flex-col justify-center items-center px-6 py-12"
+			className="min-h-screen snap-start flex flex-col justify-center items-center px-6 lg:pt-[6vh] pt-[12vh]"
 		>
 			<h1 className="text-4xl md:text-6xl mb-4 font-radley italic text-center">
 				Skills

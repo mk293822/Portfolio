@@ -2,19 +2,23 @@ const About = () => {
 	return (
 		<section
 			id="about"
-			className="hero h-screen snap-start flex flex-col justify-center items-center text-center px-6 bg-contain bg-no-repeat bg-bottom-right"
+			className="hero min-h-screen snap-start "
 		>
-			<h1 className="text-4xl md:text-6xl mb-6 font-radley italic">About Me</h1>
+			<div className="flex h-[calc(90vh+2.5px)] flex-col justify-center items-center text-center px-6 bg-contain bg-no-repeat bg-bottom-right">
+				<h1 className="text-4xl md:text-6xl mb-6 font-radley italic">
+					About Me
+				</h1>
 
-			<p className="text-lg md:text-xl max-w-2xl text-gray-700 leading-relaxed">
-				I’m a web developer focused on building modern, scalable applications
-				with clean architecture and thoughtful design.
-				<br />
-				<br />
-				My main stack includes React, Tailwind, Django, and Laravel. I care
-				deeply about performance, user experience, and writing code that is easy
-				to maintain and extend.
-			</p>
+				<p className="text-lg md:text-xl max-w-2xl text-gray-700 leading-relaxed">
+					I’m a web developer focused on building modern, scalable applications
+					with clean architecture and thoughtful design.
+					<br />
+					<br />
+					My main stack includes React, Tailwind, Django, and Laravel. I care
+					deeply about performance, user experience, and writing code that is
+					easy to maintain and extend.
+				</p>
+			</div>
 		</section>
 	);
 };
