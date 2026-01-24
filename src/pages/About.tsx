@@ -4,7 +4,7 @@ const About = () => {
 			id="about"
 			className="min-h-screen snap-start pt-[10vh]"
 		>
-			<div className=" hero h-[calc(90vh+2.5px)] flex-col justify-center items-center text-center px-6 bg-contain bg-no-repeat bg-bottom-right">
+			<div className=" hero h-[calc(90vh+2.5px)] flex flex-col justify-center items-center text-center px-6 bg-contain bg-no-repeat bg-bottom-right">
 				<h1 className="text-4xl md:text-6xl mb-6 font-radley italic">
 					About Me
 				</h1>
