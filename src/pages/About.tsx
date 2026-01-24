@@ -2,7 +2,7 @@ const About = () => {
 	return (
 		<section
 			id="about"
-			className="min-h-screen snap-start [pt-10vh]"
+			className="min-h-screen snap-start pt-[10vh]"
 		>
 			<div className=" hero h-[calc(90vh+2.5px)] flex-col justify-center items-center text-center px-6 bg-contain bg-no-repeat bg-bottom-right">
 				<h1 className="text-4xl md:text-6xl mb-6 font-radley italic">
