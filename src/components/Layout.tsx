@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
 	Drawer,
 	DrawerContent,
@@ -15,6 +15,45 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
 	const [open, setOpen] = useState(false);
+
+	useEffect(() => {
+		if (window.location.hash) {
+			const element = document.querySelector(window.location.hash);
+			if (element) {
+				element.scrollIntoView({ behavior: "smooth" });
+			}
+		}
+
+		const handleHashChange = () => {
+			const element = document.querySelector(window.location.hash);
+			if (element) {
+				element.scrollIntoView({ behavior: "smooth" });
+			}
+		};
+
+		window.addEventListener("hashchange", handleHashChange);
+
+		return () => window.removeEventListener("hashchange", handleHashChange);
+	}, []);
+
+	useEffect(() => {
+		const sections = document.querySelectorAll("section[id]");
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						history.replaceState(null, "", `#${entry.target.id}`);
+					}
+				});
+			},
+			{ threshold: 0.6 },
+		);
+
+		sections.forEach((section) => observer.observe(section));
+
+		return () => observer.disconnect();
+	}, []);
 
 	const headers = [
 		{ title: "Home", href: "#home" },
