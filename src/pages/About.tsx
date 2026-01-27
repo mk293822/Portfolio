@@ -23,7 +23,7 @@ const About = () => {
 					download
 					className="px-6 py-2 mt-6 hover:bg-gray-800 hover:text-white sm:mt-4 border border-gray-800 font-semibold lg sm:text-xl rounded-lg transition"
 				>
-					Download My CV
+					Download My Resume
 				</a>
 			</div>
 		</section>
