@@ -27,7 +27,6 @@ const Projects = () => {
 				"A robust Django-based e-commerce platform with secure checkout, inventory management, and user authentication.",
 			tech: "Django • React • Stripe",
 			github: "https://github.com/mk293822/DjangoEcommerce",
-			live: "https://minkhant29.pythonanywhere.com",
 		},
 	];
 
@@ -67,16 +66,6 @@ const Projects = () => {
 									className="text-blue-600 hover:underline text-sm"
 								>
 									GitHub
-								</a>
-							)}
-							{project.live && (
-								<a
-									href={project.live}
-									target="_blank"
-									rel="noreferrer"
-									className="text-green-600 hover:underline text-sm"
-								>
-									Live
 								</a>
 							)}
 						</div>
