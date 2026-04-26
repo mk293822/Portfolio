@@ -1,115 +1,70 @@
 import GitHubIcon from "../assets/github-142-svgrepo-com.svg";
-import HTMLIcon from "../assets/html-5-svgrepo-com.svg";
-import CSSIcon from "../assets/css-svgrepo-com.svg";
-import JSIcon from "../assets/javascript-svgrepo-com.svg";
+import DockerIcon from "../assets/docker-mark-ocean-blue.svg";
+import PythonIcon from "../assets/python-logo.svg";
+import PythonanywhereIcon from "../assets/pythonanywhere-logo.svg";
 import LaravelIcon from "../assets/laravel-svgrepo-com.svg";
-import MySQLIcon from "../assets/mysql-logo-svgrepo-com.svg";
+import PostgreSqlLogo from "../assets/postgresql-logo.svg";
 import PHPIcon from "../assets/php-svgrepo-com.svg";
 import ReactIcon from "../assets/react-svgrepo-com.svg";
-import TailwindIcon from "../assets/tailwind-svgrepo-com.svg";
+import RenderIcon from "../assets/render-logo.svg";
 import TSIcon from "../assets/typescript-svgrepo-com.svg";
+import DjangoIcon from "../assets/django-logo.svg"
+import MySqlLogo from "../assets/mysql-logo.svg"
 
 const Skills = () => {
 	const skills = [
+		// DevOps / Tools
 		{
 			name: "GitHub",
-			icon: (
-				<img
-					src={GitHubIcon}
-					alt="GitHub"
-					className="w-12 h-12"
-				/>
-			),
+			icon: <img src={GitHubIcon} alt="GitHub" className="w-12 h-12" />,
 		},
 		{
-			name: "HTML",
-			icon: (
-				<img
-					src={HTMLIcon}
-					alt="HTML"
-					className="w-12 h-12"
-				/>
-			),
+			name: "Docker",
+			icon: <img src={DockerIcon} alt="Docker" className="w-12 h-12" />,
+		},
+		// Platforms
+		{
+			name: "Render",
+			icon: <img src={RenderIcon} alt="Render" className="w-12 h-12" />,
 		},
 		{
-			name: "CSS",
-			icon: (
-				<img
-					src={CSSIcon}
-					alt="CSS"
-					className="w-12 h-12"
-				/>
-			),
+			name: "PythonAnywhere",
+			icon: <img src={PythonanywhereIcon} alt="PythonAnywhere" className="w-12 h-12" />,
 		},
+		// Database
 		{
-			name: "JavaScript",
-			icon: (
-				<img
-					src={JSIcon}
-					alt="JS"
-					className="w-12 h-12"
-				/>
-			),
-		},
-		{
-			name: "Laravel",
-			icon: (
-				<img
-					src={LaravelIcon}
-					alt="Laravel"
-					className="w-12 h-12"
-				/>
-			),
+			name: "PostgreSQL",
+			icon: <img src={PostgreSqlLogo} alt="PostgreSQL" className="w-12 h-12" />,
 		},
 		{
 			name: "MySQL",
-			icon: (
-				<img
-					src={MySQLIcon}
-					alt="MySQL"
-					className="w-12 h-12"
-				/>
-			),
+			icon: <img src={MySqlLogo} alt="MySQL" className="w-12 h-12" />,
+		},
+		// Backend
+		{
+			name: "Laravel",
+			icon: <img src={LaravelIcon} alt="Laravel" className="w-12 h-12" />,
+		},
+		{
+			name: "Django",
+			icon: <img src={DjangoIcon} alt="Django" className="w-12 h-12" />,
 		},
 		{
 			name: "PHP",
-			icon: (
-				<img
-					src={PHPIcon}
-					alt="PHP"
-					className="w-12 h-12"
-				/>
-			),
+			icon: <img src={PHPIcon} alt="PHP" className="w-12 h-12" />,
 		},
+		{
+			name: "Python",
+			icon: <img src={PythonIcon} alt="Python" className="w-12 h-12" />,
+		},
+		// Frontend
 		{
 			name: "React",
-			icon: (
-				<img
-					src={ReactIcon}
-					alt="React"
-					className="w-12 h-12"
-				/>
-			),
-		},
-		{
-			name: "Tailwind",
-			icon: (
-				<img
-					src={TailwindIcon}
-					alt="Tailwind"
-					className="w-12 h-12"
-				/>
-			),
+			icon: <img src={ReactIcon} alt="React" className="w-12 h-12" />,
 		},
 		{
 			name: "TypeScript",
-			icon: (
-				<img
-					src={TSIcon}
-					alt="TS"
-					className="w-12 h-12"
-				/>
-			),
+			icon: <img src={TSIcon} alt="TS" className="w-12 h-12" />,
 		},
 	];
 
@@ -130,7 +85,7 @@ const Skills = () => {
 				premium user experiences.
 			</p>
 
-			<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 max-w-5xl w-full">
+			<div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-8 max-w-5xl w-full">
 				{skills.map((skill, index) => (
 					<div
 						key={index}
