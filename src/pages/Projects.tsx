@@ -1,18 +1,18 @@
 const Projects = () => {
 	const projects = [
 		{
-			title: "HR Management (Laravel)",
+			title: "Personal Portfolio",
 			description:
-				"A comprehensive HR dashboard for managing employees, tracking attendance, and visualizing analytics in real time.",
-			tech: "Laravel • React • Tailwind",
-			github: "https://github.com/mk293822/Advance-HR-Management",
+				"A responsive website built to showcase my technical skills and projects, deployed using CI/CD workflows.",
+			tech: "React • Tailwind CSS • TypeScript",
+			github: "https://github.com/mk293822/Portfolio",
 		},
 		{
-			title: "Realtime Chat App (Laravel)",
+			title: "TwoDManager",
 			description:
-				"A real-time messaging platform for teams with user management, chat history, and notifications.",
-			tech: "Laravel • React • Chart.js",
-			github: "https://github.com/mk293822/realtime-chatapp",
+				"A cross-platform mobile application with a Django backend API, featuring seamless integration between mobile and cloud-deployed services.",
+			tech: "React Native • Expo • Django",
+			github: "https://github.com/mk293822/2DManager", // Adjusted based on standard naming
 		},
 		{
 			title: "E-commerce (Laravel)",
@@ -25,7 +25,7 @@ const Projects = () => {
 			title: "E-commerce (Django)",
 			description:
 				"A robust Django-based e-commerce platform with secure checkout, inventory management, and user authentication.",
-			tech: "Django • React • Stripe",
+			tech: "Django • React",
 			github: "https://github.com/mk293822/DjangoEcommerce",
 		},
 	];
