@@ -15,6 +15,19 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
 	const [open, setOpen] = useState(false);
+	const [currentHash, setCurrentHash] = useState("");
+
+	useEffect(() => {
+		const handleHashChange = () => {
+			setCurrentHash(window.location.hash);
+		};
+
+		handleHashChange();
+
+		window.addEventListener("hashchange", handleHashChange);
+
+		return () => window.removeEventListener("hashchange", handleHashChange);
+	})
 
 	useEffect(() => {
 		if (window.location.hash) {
@@ -142,7 +155,7 @@ const Layout = ({ children }: Props) => {
 								<a
 									key={index}
 									href={header.href}
-									className="text-gray-700 hover:underline hover:underline-offset-4 hover:text-gray-900 transition-colors duration-200"
+									className={`text-gray-700 ${currentHash === header.href ? "underline underline-offset-4 text-gray-900" : "hover:underline hover:underline-offset-4 hover:text-gray-900"} transition-colors duration-200`}
 								>
 									{header.title}
 								</a>
